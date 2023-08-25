@@ -1,0 +1,23 @@
+MDFloatLayout:
+
+    MDLabel:
+        text: 'Tasbeeh-Count'
+        font_size: '40sp'
+        halign: 'center'
+        pos_hint:{"center_x":.5, "center_y":.8}
+
+    MDLabel:
+        id: counter_label
+        text: '0'
+        font_size: '40sp'
+        halign: 'center'
+        pos_hint:{"center_x":.5, "center_y":.5}
+
+
+
+    MDIconButton:
+        text: 'Increase Counter'
+        icon: "counter"
+        on_release: app.increment_counter()
+        pos_hint:{"center_x":.5, "center_y":.3}
+        icon_size:100
